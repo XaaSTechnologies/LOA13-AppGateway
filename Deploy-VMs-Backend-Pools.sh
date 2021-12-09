@@ -113,7 +113,7 @@ az vm extension set \
   --name CustomScript \
   --vm-name VM-02 \
   --resource-group RG-US-Deployment \
-  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && rm -rf /var/www/html && git clone https://github.com/XaaSTechnologies/AppGw-Images-Web-Server.github.io.git /var/www/html/images”}'
+  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && rm -rf /var/www/html && git clone https://github.com/XaaSTechnologies/AppGw-Images-Web-Server.github.io.git /var/www/html/images"}'
 
 # NSG for VM-03
 az network nsg create \
@@ -164,5 +164,5 @@ az vm extension set \
   --name CustomScript \
   --vm-name VM-03 \
   --resource-group RG-US-Deployment \
-  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && rm -rf /var/www/html && git clone https://github.com/XaaSTechnologies/AppGw-Video-Web-Server.github.io.git /var/www/html/video”}'
+  --settings '{"commandToExecute":"apt-get -y update && apt-get -y install apache2 && rm -rf /var/www/html && git clone https://github.com/XaaSTechnologies/AppGw-Video-Web-Server.github.io.git /var/www/html/video"}'
 
